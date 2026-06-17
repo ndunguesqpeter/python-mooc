@@ -1,4 +1,4 @@
-# Python Portfolio — Ndungues Peter
+# Python Portfolio — NdunguesqPeter
 
 ## About Me
 IT professional based in Qatar, currently studying for CCNP 350-401 (ENCOR) 
