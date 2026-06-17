@@ -1,11 +1,18 @@
-hourly_wage = 28
-hours = 2
-day = "sunday"
+attempts = 3
 
-daily_wages = hourly_wage * hours
-if day == "sunday":
-    print(daily_wages)
-    daily_wages * 2
-    print(daily_wages)
-
-print(f"Daily wages: {daily_wages} euros")
+while True:
+    code = input("Please enter the PIN: ")
+    attempts += 1
+    
+    if code == "1234":
+        success = True
+        break
+    if attempts == 3:
+        success = False
+        break
+    print("Incorrect...Try Again!")
+ 
+if success:
+    print("Correct PIN entered!")
+else:
+    print(f"Too many attempts. You used all {attempts} attempts!")
