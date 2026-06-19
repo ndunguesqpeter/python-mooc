@@ -1,18 +1,18 @@
-positive = 0
-negative = 0
-count = 0
-total = 0 
+year = int(input("Year:"))
+current = year
+
+     
+if (current%4 == 0) and ((current%100 != 0) or (current%400 == 0)):
+    print(f"{current} is a leap year.")
+    current += 1
+    print(f"The new current year is {current}.") 
+"""Is the input year itself a leap year?"
+     ↓ YES → current = year + 1  (skip it, we want the NEXT one)
+     ↓ NO  → current stays as year"""
+print(f"{current} is not a leap year.")
 while True:
-    number = int(input("Number:"))
-    if number == 0:
+    if (current%4 == 0) and ((current%100 != 0) or (current%400 == 0)):
+        print(f"The next leap year after {year} is {current}")
         break
-    count += 1
-    total += number
-    if number > 0:
-        positive += 1
-    else:
-        negative += 1 
-print(f"{positive}")
-print(f"{negative}")
-print(f"{count}")
-print(f"{total}")
+    current += 1
+    
