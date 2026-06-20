@@ -1,4 +1,4 @@
-# Python Portfolio — Peter Kibigo
+# Python Portfolio — Peter Ndungu Kibigo
 
 ## About Me
 IT professional based in Qatar, currently studying for CCNP 350-401 (ENCOR) 
