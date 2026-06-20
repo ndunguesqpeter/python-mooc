@@ -1,18 +1,14 @@
-year = int(input("Year:"))
-current = year
-
-     
-if (current%4 == 0) and ((current%100 != 0) or (current%400 == 0)):
-    print(f"{current} is a leap year.")
-    current += 1
-    print(f"The new current year is {current}.") 
-"""Is the input year itself a leap year?"
-     ↓ YES → current = year + 1  (skip it, we want the NEXT one)
-     ↓ NO  → current stays as year"""
-print(f"{current} is not a leap year.")
+count = 0
+sum = 0
 while True:
-    if (current%4 == 0) and ((current%100 != 0) or (current%400 == 0)):
-        print(f"The next leap year after {year} is {current}")
-        break
-    current += 1
+    number = int(input("Please type in integer number. [Type in 0 to finish.] Number: "))
     
+    if number == 0:
+        break
+    count += 1
+    sum += number
+    mean = sum/count
+    
+print(f"The entries of the numbers are {count}.")
+print(f"The sum of the numbers is {sum}")
+print(f"The mean is {mean}.")
