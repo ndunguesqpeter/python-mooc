@@ -1,10 +1,8 @@
 # Print Numbers
 # Initialize and Input
-number = 2 #int(input("Number: "))
+number = int(input("Number: "))
 
 # Condition
-while number >=2 and number <=30:
-    if number % 2 == 0:
-        print(number)
-# Update Variables
-    number += 1
+while number < 100 and number % 5 != 0:
+    print(number)
+    number += 3
