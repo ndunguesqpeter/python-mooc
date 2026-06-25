@@ -1,9 +1,6 @@
-row = int(input("Rows: "))
-intial = 1
-while intial <= row:
-    column = 1
-    while column <= intial:
-        print(column, end=" ")
-        column += 1
-    print()
-    intial += 1
+input_string = input("Please enter a string: ")
+
+if len(input_string) > 0:
+    print("First character: " + input_string[0])
+else:
+    print("The input string is empty.")
