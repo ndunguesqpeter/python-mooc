@@ -1,6 +1,7 @@
-input_string = input("Please enter a string: ")
-
-if len(input_string) > 0:
-    print("First character: " + input_string[0])
-else:
-    print("The input string is empty.")
+char = "#"
+width = int(input("Width: "))
+height = int(input("Height: "))
+attempts = 0
+while attempts < height:
+    print(char*width, end=" ")
+    attempts += 1
