@@ -2,20 +2,20 @@
 number = int(input("Please type in a number:"))
 
 # Initialize the outer loop counter
-i = 1
+counter1 = 1
 
 # Outer loop: iterate from 1 to the input number
-while i <= number:
+while counter1 <= number:
     # Initialize the inner loop counter
-    j = 1
+    counter2 = 1
     
     # Inner loop: iterate from 1 to the input number
-    while j <= number:
-        # Print the multiplication result of i and j
-        print(f"{i} x {j} = {i*j}")
+    while counter2 <= number:
+        # Print the multiplication result of i and counter2
+        print(f"{counter1} x {counter2} = {counter1*counter2}")
         
         # Increment the inner loop counter
-        j += 1
+        counter2 += 1
     
     # Increment the outer loop counter
-    i += 1
+    counter1 += 1
