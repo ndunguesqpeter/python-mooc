@@ -2,13 +2,26 @@
 
 from netmiko import ConnectHandler
 
-iosv_l2 = {
+iosv_l2_s1 = {
     'device_type': 'cisco_ios',
     'ip': '192.168.42.72',
     'username': 'peter',
     'password': 'cisco',
 }
 
+iosv_l2_s2 = {
+    'device_type': 'cisco_ios',
+    'ip': '192.168.42.73',
+    'username': 'peter',
+    'password': 'cisco',
+}
+
+iosv_l2_s3 = {
+    'device_type': 'cisco_ios',
+    'ip': '192.168.42.74',
+    'username': 'peter',
+    'password': 'cisco',
+}
 
 net_connect = ConnectHandler(**iosv_l2)
 #net_connect.find_prompt()
