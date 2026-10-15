@@ -43,7 +43,7 @@ with open('iosv_l2_access') as f:
 print(lines)
 
 
-all_devices = [iosv_l2_s5, iosv_l2_s4, iosv_l2_s3]
+all_devices = [iosv_l2_s5, iosv_l2_s4, iosv_l2_s3, iosv_l2_s2, iosv_l2_s1]
 
 for devices in all_devices:
     net_connect = ConnectHandler(**devices)
