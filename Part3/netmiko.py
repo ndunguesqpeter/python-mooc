@@ -23,17 +23,13 @@ iosv_l2_s3 = {
     'password': 'cisco',
 }
 
-net_connect = ConnectHandler(**iosv_l2)
-#net_connect.find_prompt()
-output = net_connect.send_command('show ip int brief')
-print(output)
+all_devices = [iosv_l2_s1, iosv_l2_s2, iosv_l2_s3]
 
-config_commands = ['int loop 2', 'ip address 3.3.3.3 255.255.255.0']
-output = net_connect.send_config_set(config_commands)
-print(output)
 
-for n in range(20, 31):
-    print("Creating VLAN " + str(n))
-    config_commands = ['vlan ' + str(n), 'name Python_VLAN ' + str(n)]
-    output = net_connect.send_config_set(config_commands)
-    print(output) 
+for devices in all_devices:
+    net_connect = ConnectHandler(**devices)
+    for n in range(2, 21):
+        print("Creating VLAN " + str(n))
+        config_commands = ['vlan ' + str(n), 'name Python_VLAN ' + str(n)]
+        output = net_connect.send_config_set(config_commands)
+        print(output)
