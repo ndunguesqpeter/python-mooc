@@ -51,7 +51,7 @@ for devices in all_devices:
     print(output)
 
 
-with open('iosv_l2_cisco_design') as f:
+with open('iosv_l2_access') as f:
     lines = f.read().splitlines()
 print(lines)
 
