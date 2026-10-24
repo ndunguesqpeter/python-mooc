@@ -1,3 +1,4 @@
+import re
 from netmiko import ConnectHandler
 
 iosv_l2_s1 = {
