@@ -1,11 +1,13 @@
+import os
+from getpass import getpass
 import re
 from netmiko import ConnectHandler
 
 iosv_l2_s1 = {
     'device_type': 'cisco_ios',
     'ip': '192.168.42.82',
-    'username': 'peter',
-    'password': 'cisco'
+    'username': os.getenv('LAB_USER', 'peter'),
+    'password': os.getenv('LAB_PASS') or getpass('Password: ')
 }
 
 net_connect = ConnectHandler(**iosv_l2_s1)
