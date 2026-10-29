@@ -3,7 +3,7 @@ vlan_ids = []
 
 vlan = 100
 
-while len(vlan_ids) < 5:
+while 5 > len(vlan_ids):
     vlan_ids.append(vlan)
     vlan += 100
 
